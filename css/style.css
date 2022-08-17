@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.display-img img {
+    width: 30vh;
+}
+
+.div-action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
