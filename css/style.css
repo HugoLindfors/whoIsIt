@@ -1,15 +1,23 @@
 body {
-    text-align: center;
-} .display-img img {
-    width: 30vh;
-} .div-action-buttons {
-    height: 16vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-} .display-answer-text {
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-} h1 {
-    font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.display-img img {
+  width: 30vh;
+}
+.div-action-buttons {
+  height: 16vh;
+  gap: 0.5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.div-action-buttons button {
+  gap: 0.5vh;
+}
+.display-answer-text {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
 }
