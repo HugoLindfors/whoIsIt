@@ -1,35 +1,35 @@
 const people = [
   {
     name: "Albin Norbäck",
-    imgsrc: "/img/Albin.jpeg",
+    imgsrc: "./img/Albin.jpeg",
   },
   {
     name: "Amir Ismail",
-    imgsrc: "/img/Amir.jpeg",
+    imgsrc: "./img/Amir.jpeg",
   },
   {
     name: "Charlie Nylund",
-    imgsrc: "/img/Charlie.jpeg",
+    imgsrc: "./img/Charlie.jpeg",
   },
   {
     name: "Hugo Lindfors",
-    imgsrc: "/img/Hugo.jpeg",
+    imgsrc: "./img/Hugo.jpeg",
   },
   {
     name: "Markus Piotrowski",
-    imgsrc: "/img/Markus.jpeg",
+    imgsrc: "./img/Markus.jpeg",
   },
   {
     name: "Mathias Åhlander",
-    imgsrc: "/img/Mathias.jpeg",
+    imgsrc: "./img/Mathias.jpeg",
   },
   {
     name: "Robin Barwari",
-    imgsrc: "/img/Robin.jpeg",
+    imgsrc: "./img/Robin.jpeg",
   },
   {
     name: "Samuel Broman",
-    imgsrc: "/img/Samuel.jpeg",
+    imgsrc: "./img/Samuel.jpeg",
   },
 ];
 setTimeout(insertPeople, 1);
