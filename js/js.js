@@ -27,10 +27,10 @@ const people = [
     name: "Robin Barwari",
     imgsrc: "/img/Robin.jpeg",
   },
-  (samuel = {
+  {
     name: "Samuel Broman",
     imgsrc: "/img/Samuel.jpeg",
-  }),
+  },
 ];
 const button1 = document.querySelector(".b1");
 const button2 = document.querySelector(".b2");
@@ -58,8 +58,8 @@ function buttonPressed(input) {
 }
 
 function insertPeople() {
-    let peopleCopy = [...people];
-    let randomPeopleArray = [];
+  let peopleCopy = [...people];
+  let randomPeopleArray = [];
 
   for (let index = 0; index < peopleCopy.length; index++) {
     let random = Math.floor(Math.random() * peopleCopy.length);
@@ -74,10 +74,10 @@ function insertPeople() {
     element.innerHTML = personPoped.name;
     peoplePopedArray.push(personPoped);
   });
-  let randomNr =
+  let randomPerson =
     peoplePopedArray[Math.floor(Math.random() * peoplePopedArray.length)];
 
-  imageOfPersonsFace.src = peoplePopedArray[randomNr].imgsrc;
+  imageOfPersonsFace.src = randomPerson.imgsrc;
 }
 
 /*
