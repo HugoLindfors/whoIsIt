@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/js.js"></script>
     <title>Who Is It?</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Vem är detta?</h1>
+      <h1>Vem är detta?</h1>
     </header>
     <div class="main-body">
-        <div class="display">
-            <div class="display-img">
-                <img id="image-of-persons-face" src="./img/Albin.jpeg" alt="bild på person som ska gissas">
-            </div>
-            <div class="div-action-buttons">
-                <button type="button" class="b1">
-                    <span id="name-1"> Click to Start </span>
-                </button>
-                <button type="button" class="b2">
-                    <span id="name-2"> Click to Start </span>
-                </button>
-                <button type="button" class="b3">
-                    <span id="name-3"> Click to Start </span>
-                </button>
-                <button type="button" class="b4">
-                    <span id="name-4"> Click to Start </span>
-                </button>
-            </div>
-            <div>
-                <span class="display-answer-text">
-
-                </span>
-            </div>
+      <div class="display">
+        <div class="display-img">
+          <img
+            id="image-of-persons-face"
+            src="./img/Albin.jpeg"
+            alt="bild på person som ska gissas"
+          />
         </div>
+        <div class="div-action-buttons">
+          <button type="button" class="b1">
+            <span id="name-1"> Click to Start </span>
+          </button>
+          <button type="button" class="b2">
+            <span id="name-2"> Click to Start </span>
+          </button>
+          <button type="button" class="b3">
+            <span id="name-3"> Click to Start </span>
+          </button>
+          <button type="button" class="b4">
+            <span id="name-4"> Click to Start </span>
+          </button>
+        </div>
+        <div>
+          <span class="display-answer-text"> </span>
+          <p>Your answer streak is <span id="answer-streak">0</span></p>
+          <p>Your best answer streak is <span id="answer-streak-best">0</span></p>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

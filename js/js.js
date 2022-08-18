@@ -32,7 +32,7 @@ const people = [
     imgsrc: "/img/Samuel.jpeg",
   },
 ];
-setTimeout(insertPeople,1)
+setTimeout(insertPeople, 1);
 
 const button1 = document.querySelector(".b1");
 const button2 = document.querySelector(".b2");
@@ -40,6 +40,8 @@ const button3 = document.querySelector(".b3");
 const button4 = document.querySelector(".b4");
 const imageOfPersonsFace = document.querySelector("#image-of-persons-face");
 const displayAnswerText = document.querySelector(".display-answer-text");
+const answerStreakLabel = document.querySelector("#answer-streak");
+const answerStreakBestLabel = document.querySelector("#answer-streak-best");
 
 const buttonText = [
   document.querySelector("#name-1"),
@@ -49,6 +51,8 @@ const buttonText = [
 ];
 
 let correctAnswer = "";
+let answerStreak = 0;
+let bestAnswerStreak = 0;
 
 button1.addEventListener("click", function button1Pressed() {
   buttonPressed(buttonText[0].innerHTML);
@@ -65,12 +69,19 @@ button4.addEventListener("click", function button4Pressed() {
 
 function buttonPressed(input) {
   if (input === correctAnswer) {
-    displayAnswerText.innerHTML="RÄTT!";
+    displayAnswerText.innerHTML = "RÄTT!";
     displayAnswerText.style.color = "green";
+    answerStreak++;
   } else {
-    displayAnswerText.innerHTML="FEL!";
+    displayAnswerText.innerHTML = "FEL!";
     displayAnswerText.style.color = "red";
+    if (answerStreak > bestAnswerStreak) {
+      bestAnswerStreak = answerStreak;
+    }
+    answerStreak = 0;
+    answerStreakBestLabel.innerHTML = bestAnswerStreak;
   }
+  answerStreakLabel.innerHTML = answerStreak;
   insertPeople();
 }
 
@@ -97,29 +108,3 @@ function insertPeople() {
   imageOfPersonsFace.src = randomPerson.imgsrc;
   correctAnswer = randomPerson.name;
 }
-
-/*
-function nextPerson() {
-    let corretPersonNr = Math.floor(Math.random() * people.length);
-    let fillPersonNr1 = Math.floor(Math.random() * people.length);
-    let fillPersonNr2 = Math.floor(Math.random() * people.length);
-    let fillPersonNr3 = Math.floor(Math.random() * people.length);
-    while (fillPersonNr1 === corretPersonNr || fillPersonNr2 === corretPersonNr|| fillPersonNr3===corretPersonNr) {
-        fillPersonNr1 = Math.floor(Math.random() * people.length);
-        fillPersonNr2 = Math.floor(Math.random() * people.length);
-        fillPersonNr3 = Math.floor(Math.random() * people.length);
-    }
-
-    let fillPeople= [corretPersonNr]
-    let isTaken=[false, false, false, false]
-
-   buttonText.forEach(element => {
-    let random = Math.floor(Math.random() * 4)
-    while (!isTaken[random]) {
-    random = Math.floor(Math.random() * 4)
-    }
-    isTaken[random]=true;
-    
-   });
-};
-*/
