@@ -1,13 +1,13 @@
 body {
     text-align: center;
-}
-
-.display-img img {
+} .display-img img {
     width: 30vh;
-}
-
-.div-action-buttons {
+} .div-action-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+} .display-correct-answer-text {
+    color: green;
+} .display-incorrect-answer-text {
+    color: red;
 }
