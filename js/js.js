@@ -67,7 +67,9 @@ button4.addEventListener("click", function button4Pressed() {
 function buttonPressed(input) {
   if (input === correctAnswer) {
     displayCorrectAnswerText.innerHTML="RÄTT!";
+    displayIncorrectAnswerText.innerHTML="";
   } else {
+    displayCorrectAnswerText.innerHTML="";
     displayIncorrectAnswerText.innerHTML="FEL!";
   }
   insertPeople();
