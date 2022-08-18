@@ -3,6 +3,7 @@ body {
 } .display-img img {
     width: 30vh;
 } .div-action-buttons {
+    height: 16vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
