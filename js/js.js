@@ -48,6 +48,9 @@ const buttonText = [
 let correctAnswer = "1";
 
 button1.addEventListener("click", insertPeople);
+button2.addEventListener("click", insertPeople);
+button3.addEventListener("click", insertPeople);
+button4.addEventListener("click", insertPeople);
 
 function buttonPressed(input) {
   if (input === correctAnswer) {
