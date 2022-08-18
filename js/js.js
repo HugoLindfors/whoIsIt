@@ -68,7 +68,7 @@ function buttonPressed(input) {
   if (input === correctAnswer) {
     displayCorrectAnswerText.innerHTML="RÄTT!";
   } else {
-    displayIcorrectAnswerText.innerHTML="FEL!";
+    displayIncorrectAnswerText.innerHTML="FEL!";
   }
   insertPeople();
 }
