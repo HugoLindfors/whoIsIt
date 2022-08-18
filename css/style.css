@@ -7,10 +7,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-} .display-correct-answer-text {
-    color: green;
+} .display-answer-text {
     font-size: 32px;
-} .display-incorrect-answer-text {
-    color: red;
-    font-size: 32px;
-} 
+}
