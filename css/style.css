@@ -9,6 +9,7 @@ body {
     grid-template-rows: 1fr 1fr;
 } .display-answer-text {
     font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
 } h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
