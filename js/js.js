@@ -39,7 +39,8 @@ const button2 = document.querySelector(".b2");
 const button3 = document.querySelector(".b3");
 const button4 = document.querySelector(".b4");
 const imageOfPersonsFace = document.querySelector("#image-of-persons-face");
-const displayAnswerText = document.querySelector(".display-answer-text");
+const displayCorrectAnswerText = document.querySelector(".display-correct-answer-text");
+const displayIncorrectAnswerText = document.querySelector(".display-icorrect-answer-text");
 
 const buttonText = [
   document.querySelector("#name-1"),
@@ -65,9 +66,9 @@ button4.addEventListener("click", function button4Pressed() {
 
 function buttonPressed(input) {
   if (input === correctAnswer) {
-    displayAnswerText.innerHTML="RÄTT!";
+    displayCorrectAnswerText.innerHTML="RÄTT!";
   } else {
-    displayAnswerText.innerHTML="FEL!";
+    displayIcorrectAnswerText.innerHTML="FEL!";
   }
   insertPeople();
 }
