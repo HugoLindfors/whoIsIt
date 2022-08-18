@@ -40,7 +40,7 @@ const button3 = document.querySelector(".b3");
 const button4 = document.querySelector(".b4");
 const imageOfPersonsFace = document.querySelector("#image-of-persons-face");
 const displayCorrectAnswerText = document.querySelector(".display-correct-answer-text");
-const displayIncorrectAnswerText = document.querySelector(".display-icorrect-answer-text");
+const displayIncorrectAnswerText = document.querySelector(".display-incorrect-answer-text");
 
 const buttonText = [
   document.querySelector("#name-1"),
