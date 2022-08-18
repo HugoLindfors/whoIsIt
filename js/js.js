@@ -32,11 +32,14 @@ const people = [
     imgsrc: "/img/Samuel.jpeg",
   },
 ];
+setTimeout(insertPeople,1)
+
 const button1 = document.querySelector(".b1");
 const button2 = document.querySelector(".b2");
 const button3 = document.querySelector(".b3");
 const button4 = document.querySelector(".b4");
 const imageOfPersonsFace = document.querySelector("#image-of-persons-face");
+const displayAnswerText = document.querySelector(".display-answer-text");
 
 const buttonText = [
   document.querySelector("#name-1"),
@@ -45,19 +48,28 @@ const buttonText = [
   document.querySelector("#name-4"),
 ];
 
-let correctAnswer = "1";
+let correctAnswer = "";
 
-button1.addEventListener("click", insertPeople);
-button2.addEventListener("click", insertPeople);
-button3.addEventListener("click", insertPeople);
-button4.addEventListener("click", insertPeople);
+button1.addEventListener("click", function button1Pressed() {
+  buttonPressed(buttonText[0].innerHTML);
+});
+button2.addEventListener("click", function button2Pressed() {
+  buttonPressed(buttonText[1].innerHTML);
+});
+button3.addEventListener("click", function button3Pressed() {
+  buttonPressed(buttonText[2].innerHTML);
+});
+button4.addEventListener("click", function button4Pressed() {
+  buttonPressed(buttonText[3].innerHTML);
+});
 
 function buttonPressed(input) {
   if (input === correctAnswer) {
-    alert("Du väl rätt");
+    displayAnswerText.innerHTML="RÄTT!";
   } else {
-    alert("Du hade fel!");
+    displayAnswerText.innerHTML="FEL!";
   }
+  insertPeople();
 }
 
 function insertPeople() {
@@ -81,6 +93,7 @@ function insertPeople() {
     peoplePopedArray[Math.floor(Math.random() * peoplePopedArray.length)];
 
   imageOfPersonsFace.src = randomPerson.imgsrc;
+  correctAnswer = randomPerson.name;
 }
 
 /*
